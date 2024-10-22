@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>priority</element>
+        <name>x_snc_learning_hub_learning_hub</name>
+        <style>background-color: RGB(136, 8, 8)</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 05:35:31</sys_created_on>
+        <sys_id>9846b34bc3d95210aa2498ec050131e2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>x_snc_learning_hub_learning_hub</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_ui_style_9846b34bc3d95210aa2498ec050131e2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 05:39:36</sys_updated_on>
+        <themed_style/>
+        <value>1</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=9846b34bc3d95210aa2498ec050131e2"/>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="x_snc_learning_hub_priority_data_lookup">
+    <x_snc_learning_hub_priority_data_lookup action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <impact>1</impact>
+        <order>200</order>
+        <priority>2</priority>
+        <sys_class_name>x_snc_learning_hub_priority_data_lookup</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 08:16:09</sys_created_on>
+        <sys_id>6a7197bac3151210aa2498ec0501311b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>200</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>x_snc_learning_hub_priority_data_lookup_6a7197bac3151210aa2498ec0501311b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 08:16:27</sys_updated_on>
+        <urgency>2</urgency>
+    </x_snc_learning_hub_priority_data_lookup>
+</record_update>

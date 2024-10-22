@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition">
+    <dl_definition action="DELETE">
+        <active>true</active>
+        <matcher_table>x_snc_learning_hub_priority_data_lookup</matcher_table>
+        <name>Setting Priority </name>
+        <run_on_form_change>true</run_on_form_change>
+        <run_on_insert>true</run_on_insert>
+        <run_on_update>false</run_on_update>
+        <source_table>x_snc_learning_hub_learning_hub</source_table>
+        <sys_class_name>dl_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 13:22:16</sys_created_on>
+        <sys_id>7387d0c7c3591210aa2498ec05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Setting Priority </sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>dl_definition_7387d0c7c3591210aa2498ec05013198</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:22:16</sys_updated_on>
+    </dl_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>dl_definition_7387d0c7c3591210aa2498ec05013198</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition"><dl_definition action="INSERT_OR_UPDATE"><active>true</active><matcher_table>x_snc_learning_hub_priority_data_lookup</matcher_table><name>Setting Priority </name><run_on_form_change>true</run_on_form_change><run_on_insert>true</run_on_insert><run_on_update>false</run_on_update><source_table>x_snc_learning_hub_learning_hub</source_table><sys_class_name>dl_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-21 13:22:16</sys_created_on><sys_id>7387d0c7c3591210aa2498ec05013198</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Setting Priority </sys_name><sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package><sys_policy/><sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope><sys_update_name>dl_definition_7387d0c7c3591210aa2498ec05013198</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-21 13:22:16</sys_updated_on></dl_definition></record_update>]]></payload>
+        <payload_hash>543890275</payload_hash>
+        <record_name>Setting Priority </record_name>
+        <reverted_from/>
+        <source>fdb12a99c3199210aa2498ec05013152</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 13:22:16</sys_created_on>
+        <sys_id>2b97d887c3991210aa2498ec05013151</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192af3e1e980000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:22:16</sys_updated_on>
+        <type>Data Lookup Definitions</type>
+        <update_guid>2f97d887a09912105dbdff0a35caf150</update_guid>
+        <update_guid_history>2f97d887a09912105dbdff0a35caf150:543890275</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Setting Priority ">0682f3c3c3d95210aa2498ec05013152</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 05:18:44</sys_created_on>
+        <sys_db_object display_value="" name="dl_definition">dl_definition</sys_db_object>
+        <sys_id>596614e3beaf4a648643842cb91e9b49</sys_id>
+        <sys_metadata>7387d0c7c3591210aa2498ec05013198</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Setting Priority </sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>dl_definition_7387d0c7c3591210aa2498ec05013198</sys_update_name>
+        <sys_update_version display_value="dl_definition_7387d0c7c3591210aa2498ec05013198">2b97d887c3991210aa2498ec05013151</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 05:18:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

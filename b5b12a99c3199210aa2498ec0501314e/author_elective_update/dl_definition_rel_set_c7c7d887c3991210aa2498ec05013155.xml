@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition_rel_set">
+    <dl_definition_rel_set action="DELETE">
+        <always_replace>false</always_replace>
+        <dl_definition display_value="Setting Priority ">7387d0c7c3591210aa2498ec05013198</dl_definition>
+        <matcher_table>x_snc_learning_hub_priority_data_lookup</matcher_table>
+        <matcher_table_field>priority</matcher_table_field>
+        <source_table>x_snc_learning_hub_learning_hub</source_table>
+        <source_table_field>priority</source_table_field>
+        <sys_class_name>dl_definition_rel_set</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 13:23:12</sys_created_on>
+        <sys_id>c7c7d887c3991210aa2498ec05013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>priority</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>dl_definition_rel_set_c7c7d887c3991210aa2498ec05013155</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:23:12</sys_updated_on>
+    </dl_definition_rel_set>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>dl_definition_rel_set_c7c7d887c3991210aa2498ec05013155</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition_rel_set"><dl_definition_rel_set action="INSERT_OR_UPDATE"><always_replace>false</always_replace><dl_definition display_value="Setting Priority ">7387d0c7c3591210aa2498ec05013198</dl_definition><matcher_table>x_snc_learning_hub_priority_data_lookup</matcher_table><matcher_table_field>priority</matcher_table_field><source_table>x_snc_learning_hub_learning_hub</source_table><source_table_field>priority</source_table_field><sys_class_name>dl_definition_rel_set</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-21 13:23:12</sys_created_on><sys_id>c7c7d887c3991210aa2498ec05013155</sys_id><sys_mod_count>0</sys_mod_count><sys_name>priority</sys_name><sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package><sys_policy/><sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope><sys_update_name>dl_definition_rel_set_c7c7d887c3991210aa2498ec05013155</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-21 13:23:12</sys_updated_on></dl_definition_rel_set></record_update>]]></payload>
+        <payload_hash>746886454</payload_hash>
+        <record_name>priority</record_name>
+        <reverted_from/>
+        <source>fdb12a99c3199210aa2498ec05013152</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 13:23:12</sys_created_on>
+        <sys_id>5dd7dc87c3991210aa2498ec050131f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192af3ef9890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 13:23:12</sys_updated_on>
+        <type>Setter Field Definitions</type>
+        <update_guid>d5d718876c9912101401b9cef0caa1af</update_guid>
+        <update_guid_history>d5d718876c9912101401b9cef0caa1af:746886454</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="priority">8682bbc3c3d95210aa2498ec050131ff</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-22 05:18:44</sys_created_on>
+        <sys_db_object display_value="" name="dl_definition_rel_set">dl_definition_rel_set</sys_db_object>
+        <sys_id>6eba9e76f09c459da4fc25322f3a3959</sys_id>
+        <sys_metadata>c7c7d887c3991210aa2498ec05013155</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>priority</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>dl_definition_rel_set_c7c7d887c3991210aa2498ec05013155</sys_update_name>
+        <sys_update_version display_value="dl_definition_rel_set_c7c7d887c3991210aa2498ec05013155">5dd7dc87c3991210aa2498ec050131f9</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 05:18:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition_rel_match">
+    <dl_definition_rel_match action="INSERT_OR_UPDATE">
+        <dl_definition display_value="Priority Data Lookup Rules">fa5fdf3ec3551210aa2498ec050131c8</dl_definition>
+        <exact_match>false</exact_match>
+        <matcher_table>x_snc_learning_hub_priority_data_lookup</matcher_table>
+        <matcher_table_field>impact</matcher_table_field>
+        <source_table>x_snc_learning_hub_learning_hub</source_table>
+        <source_table_field>impact</source_table_field>
+        <sys_class_name>dl_definition_rel_match</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-21 09:17:31</sys_created_on>
+        <sys_id>028fd37ec3551210aa2498ec050131b0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>impact</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>dl_definition_rel_match_028fd37ec3551210aa2498ec050131b0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-22 05:24:06</sys_updated_on>
+    </dl_definition_rel_match>
+</record_update>
