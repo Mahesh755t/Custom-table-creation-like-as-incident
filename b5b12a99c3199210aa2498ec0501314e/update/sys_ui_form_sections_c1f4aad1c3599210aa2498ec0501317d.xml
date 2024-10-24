@@ -56,6 +56,20 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2024-10-16 13:19:05</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-23 07:00:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f373d5ebc3911210aa2498ec050131af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_snc_learning_hub_learning_hub" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">c1f4aad1c3599210aa2498ec0501317d</sys_ui_form>
+            <sys_ui_section caption="Operating Systems" display_value="Operating Systems" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">3b7311abc3911210aa2498ec050131e2</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-23 07:00:52</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_snc_learning_hub_learning_hub</name>
             <roles/>

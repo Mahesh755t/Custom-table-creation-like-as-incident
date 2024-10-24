@@ -4,13 +4,13 @@
             <element>process_flow.xml</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>ba9dc85bc35d5210aa2498ec0501316f</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>1d51512bc3911210aa2498ec05013157</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Process Flow">94cd0736c3151210aa2498ec050131ed</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.begin_split</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>369dc85bc35d5210aa2498ec05013170</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>1d51512bc3911210aa2498ec05013158</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>number</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>ba9dc85bc35d5210aa2498ec05013170</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>9151512bc3911210aa2498ec05013159</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>caller_id</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>329dc85bc35d5210aa2498ec05013171</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>1951512bc3911210aa2498ec05013159</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>category</element>
             <position>4</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>b69dc85bc35d5210aa2498ec05013171</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>9d51512bc3911210aa2498ec05013159</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>subcategory</element>
             <position>5</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>3e9dc85bc35d5210aa2498ec05013171</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>1551512bc3911210aa2498ec0501315a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>service</element>
             <position>6</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>b29dc85bc35d5210aa2498ec05013172</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>9951512bc3911210aa2498ec0501315a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>service_offering</element>
             <position>7</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>3a9dc85bc35d5210aa2498ec05013172</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>1151512bc3911210aa2498ec0501315b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>configuration_item</element>
             <position>8</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>be9dc85bc35d5210aa2498ec05013172</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>9551512bc3911210aa2498ec0501315b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>.split</element>
             <position>9</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>369dc85bc35d5210aa2498ec05013173</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>d151512bc3911210aa2498ec05013168</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>channel</element>
             <position>10</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>ba9dc85bc35d5210aa2498ec05013173</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>5951512bc3911210aa2498ec05013168</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>state</element>
             <position>11</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>329dc85bc35d5210aa2498ec05013174</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>dd51512bc3911210aa2498ec05013168</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>on_hold_reason</element>
             <position>12</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>b69dc85bc35d5210aa2498ec05013174</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>5551512bc3911210aa2498ec05013169</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -186,13 +186,13 @@
             <element>impact</element>
             <position>13</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>3e9dc85bc35d5210aa2498ec05013174</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>d951512bc3911210aa2498ec05013169</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -200,13 +200,13 @@
             <element>urgency</element>
             <position>14</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>839dc85bc35d5210aa2498ec05013175</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>5151512bc3911210aa2498ec0501316a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -214,13 +214,13 @@
             <element>priority</element>
             <position>15</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>0b9dc85bc35d5210aa2498ec05013175</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>d551512bc3911210aa2498ec0501316a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -228,13 +228,13 @@
             <element>assignment_group</element>
             <position>16</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>8f9dc85bc35d5210aa2498ec05013175</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>5d51512bc3911210aa2498ec0501316a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -242,69 +242,83 @@
             <element>assigned_to</element>
             <position>17</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>079dc85bc35d5210aa2498ec05013176</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>d151512bc3911210aa2498ec0501316b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_string_1</element>
+            <position>18</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>5951512bc3911210aa2498ec0501316b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>18</position>
+            <position>19</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>8b9dc85bc35d5210aa2498ec05013176</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>dd51512bc3911210aa2498ec0501316b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>19</position>
+            <position>20</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>039dc85bc35d5210aa2498ec05013177</sys_id>
+            <sys_created_on>2024-10-23 06:51:24</sys_created_on>
+            <sys_id>5551512bc3911210aa2498ec0501316c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:24</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>20</position>
+            <position>21</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>879dc85bc35d5210aa2498ec05013177</sys_id>
+            <sys_created_on>2024-10-23 06:51:25</sys_created_on>
+            <sys_id>d951512bc3911210aa2498ec0501316c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:25</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>cxs_table_search.xml</element>
-            <position>21</position>
+            <position>22</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-10-22 07:17:01</sys_created_on>
-            <sys_id>0f9dc85bc35d5210aa2498ec05013177</sys_id>
+            <sys_created_on>2024-10-23 06:51:25</sys_created_on>
+            <sys_id>5151512bc3911210aa2498ec0501316d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_learning_hub_learning_hub" sys_domain="global" view="Default view">aa7e0bb6c3151210aa2498ec050131c4</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-10-22 07:17:01</sys_updated_on>
+            <sys_updated_on>2024-10-23 06:51:25</sys_updated_on>
             <sys_user/>
             <type>formatter</type>
         </sys_ui_element>
