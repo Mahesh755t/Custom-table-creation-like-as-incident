@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="1d19667fc3d11210aa2498ec050131a5" extends="task" label="Incidents" max_length="40" name="x_snc_learning_hub_incidents" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Resolution notes" max_length="4000" name="resolution_notes" type="string"/>
+        <element attributes="encode_utf8=false" label="Parent Incident" max_length="32" name="parent_incident" reference="problem" type="reference"/>
+        <element attributes="encode_utf8=false" label="Change Request" max_length="32" name="change_request" reference="change_request" type="reference"/>
+        <element choice="1" choice_field="urgency" choice_table="x_snc_learning_hub_learning_hub" label="Urgency" max_length="40" name="urgency1" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" choice_field="priority" choice_table="x_snc_learning_hub_learning_hub" label="Priority" max_length="40" name="priority1" read_only="true" type="choice">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="Resolved by" max_length="32" name="resolved_by" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Problem" max_length="32" name="problem" reference="problem" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="close_code" choice_table="incident" label="Resolution code" max_length="40" name="resolution_code" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Resolved by change" sequence="4" value="Resolved by change"/>
+                <element inactive_on_update="false" label="Resolved by problem" sequence="5" value="Resolved by problem"/>
+                <element inactive_on_update="false" label="Resolved by request" sequence="6" value="Resolved by request"/>
+                <element inactive_on_update="false" label="Solution provided" sequence="7" value="Solution provided"/>
+                <element inactive_on_update="false" label="Workaround provided" sequence="8" value="Workaround provided"/>
+                <element inactive_on_update="false" label="User error" sequence="9" value="User error"/>
+                <element inactive_on_update="false" label="Known error" sequence="1" value="Known error"/>
+                <element inactive_on_update="false" label="No resolution provided" sequence="2" value="No resolution provided"/>
+                <element inactive_on_update="false" label="Resolved by caller" sequence="3" value="Resolved by caller"/>
+                <element inactive_on_update="false" label="Duplicate" sequence="0" value="Duplicate"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="impact" choice_table="x_snc_learning_hub_learning_hub" default="3" label="Impact" max_length="40" name="impact1" type="choice">
+            <choice/>
+        </element>
+        <element label="Caller Id" mandatory="true" max_length="32" name="caller_id" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="subcategory" choice_table="incident" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="category" choice_table="incident" default="inquiry" label="Category" max_length="40" name="category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Inquiry / Help" sequence="0" value="inquiry"/>
+                <element inactive_on_update="false" label="Software" sequence="1" value="software"/>
+                <element inactive_on_update="false" label="Hardware" sequence="2" value="hardware"/>
+                <element inactive_on_update="false" label="Network" sequence="3" value="network"/>
+                <element inactive_on_update="false" label="Database" sequence="4" value="database"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Resolved" max_length="40" name="resolved" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Service" max_length="32" name="service" reference="cmdb_ci_service" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="on_hold_reason" choice_table="x_snc_learning_hub_learning_hub" label="On hold reason" max_length="40" name="on_hold_reason" type="string">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="Caused by Change" max_length="32" name="caused_by_change" reference="change_request" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="contact_type" choice_table="incident" label="Channel" max_length="40" name="channel" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Email" sequence="1" value="email"/>
+                <element inactive_on_update="false" label="Chat" sequence="0" value="chat"/>
+                <element inactive_on_update="false" label="Phone" sequence="2" value="phone"/>
+                <element inactive_on_update="false" label="Self-service" sequence="3" value="self-service"/>
+                <element inactive_on_update="false" label="Virtual Agent" sequence="4" value="virtual_agent"/>
+                <element inactive_on_update="false" label="Walk-in" sequence="5" value="walk-in"/>
+            </choice>
+        </element>
+    </element>
+</database>

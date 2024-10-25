@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission">
+    <par_dashboard_permission action="DELETE">
+        <can_read>true</can_read>
+        <can_share>true</can_share>
+        <can_write>true</can_write>
+        <dashboard display_value="Based on Priority and Assignment Group">867d556bc3d11210aa2498ec050131e2</dashboard>
+        <group/>
+        <owner>true</owner>
+        <role/>
+        <sys_class_name>par_dashboard_permission</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 07:44:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>467d556bc3d11210aa2498ec050131e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>867d556bc3d11210aa2498ec050131e2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>par_dashboard_permission_467d556bc3d11210aa2498ec050131e5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 07:44:26</sys_updated_on>
+        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+    </par_dashboard_permission>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>par_dashboard_permission_467d556bc3d11210aa2498ec050131e5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_permission"><par_dashboard_permission action="INSERT_OR_UPDATE"><can_read>true</can_read><can_share>true</can_share><can_write>true</can_write><dashboard display_value="Based on Priority and Assignment Group">867d556bc3d11210aa2498ec050131e2</dashboard><group/><owner>true</owner><role/><sys_class_name>par_dashboard_permission</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-23 07:44:26</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>467d556bc3d11210aa2498ec050131e5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>867d556bc3d11210aa2498ec050131e2</sys_name><sys_overrides/><sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package><sys_policy/><sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope><sys_update_name>par_dashboard_permission_467d556bc3d11210aa2498ec050131e5</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-23 07:44:26</sys_updated_on><user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user></par_dashboard_permission></record_update>]]></payload>
+        <payload_hash>1305609237</payload_hash>
+        <record_name>867d556bc3d11210aa2498ec050131e2</record_name>
+        <reverted_from/>
+        <source>1be0d19fc3919210aa2498ec05013175</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-23 07:44:26</sys_created_on>
+        <sys_id>867d5d6bc3d11210aa2498ec05013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192b855894c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-23 07:44:26</sys_updated_on>
+        <type>PAR Dashboard Permission</type>
+        <update_guid>8a7d5d6bc1d11210627860554dd08024</update_guid>
+        <update_guid_history>8a7d5d6bc1d11210627860554dd08024:1305609237</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f636dab3c3911210aa2498ec05013112</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 06:30:54</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_permission">par_dashboard_permission</sys_db_object>
+        <sys_id>001460874457462a830affea21135444</sys_id>
+        <sys_metadata>467d556bc3d11210aa2498ec050131e5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>867d556bc3d11210aa2498ec050131e2</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>par_dashboard_permission_467d556bc3d11210aa2498ec050131e5</sys_update_name>
+        <sys_update_version display_value="par_dashboard_permission_467d556bc3d11210aa2498ec050131e5">867d5d6bc3d11210aa2498ec05013125</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 06:30:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

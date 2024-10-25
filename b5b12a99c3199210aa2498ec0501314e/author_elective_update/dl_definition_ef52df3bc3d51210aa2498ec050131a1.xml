@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition">
+    <dl_definition action="DELETE">
+        <active>true</active>
+        <matcher_table>x_snc_learning_hub_priority_data_lookup</matcher_table>
+        <name>Extends table of incident</name>
+        <run_on_form_change>true</run_on_form_change>
+        <run_on_insert>true</run_on_insert>
+        <run_on_update>true</run_on_update>
+        <source_table>x_snc_learning_hub_incidents</source_table>
+        <sys_class_name>dl_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 10:54:03</sys_created_on>
+        <sys_id>ef52df3bc3d51210aa2498ec050131a1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Extends table of incident</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>dl_definition_ef52df3bc3d51210aa2498ec050131a1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 10:57:40</sys_updated_on>
+    </dl_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>dl_definition_ef52df3bc3d51210aa2498ec050131a1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition"><dl_definition action="INSERT_OR_UPDATE"><active>true</active><matcher_table>x_snc_learning_hub_priority_data_lookup</matcher_table><name>Extends table of incident</name><run_on_form_change>true</run_on_form_change><run_on_insert>true</run_on_insert><run_on_update>true</run_on_update><source_table>x_snc_learning_hub_incidents</source_table><sys_class_name>dl_definition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-24 10:54:03</sys_created_on><sys_id>ef52df3bc3d51210aa2498ec050131a1</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Extends table of incident</sys_name><sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package><sys_policy/><sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope><sys_update_name>dl_definition_ef52df3bc3d51210aa2498ec050131a1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-24 10:57:40</sys_updated_on></dl_definition></record_update>]]></payload>
+        <payload_hash>-195455829</payload_hash>
+        <record_name>Extends table of incident</record_name>
+        <reverted_from/>
+        <source>1be0d19fc3919210aa2498ec05013175</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 10:57:40</sys_created_on>
+        <sys_id>2e43977bc3d51210aa2498ec0501315e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192be2cd07a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 10:57:40</sys_updated_on>
+        <type>Data Lookup Definitions</type>
+        <update_guid>e243977b4cd5121052c66fe9778bf65e</update_guid>
+        <update_guid_history>e243977b4cd5121052c66fe9778bf65e:-195455829,59929f3bddd51210d1734d9740b99fa2:-707273674,e972537b56d51210a05e84124da83558:1645805045</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Extends table of incident">2436dbbfc3d51210aa2498ec050131f6</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 11:10:23</sys_created_on>
+        <sys_db_object display_value="" name="dl_definition">dl_definition</sys_db_object>
+        <sys_id>37cf872e5ed7456c8f2b927778ab3c64</sys_id>
+        <sys_metadata>ef52df3bc3d51210aa2498ec050131a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Extends table of incident</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>dl_definition_ef52df3bc3d51210aa2498ec050131a1</sys_update_name>
+        <sys_update_version display_value="dl_definition_ef52df3bc3d51210aa2498ec050131a1">2e43977bc3d51210aa2498ec0501315e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 11:10:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

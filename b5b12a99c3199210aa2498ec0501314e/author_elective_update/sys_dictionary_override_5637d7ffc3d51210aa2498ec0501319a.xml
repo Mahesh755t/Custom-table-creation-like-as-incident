@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
+    <sys_dictionary_override action="DELETE">
+        <attributes/>
+        <attributes_override>false</attributes_override>
+        <base_table>task</base_table>
+        <calculation/>
+        <calculation_override>false</calculation_override>
+        <default_value>0</default_value>
+        <default_value_override>true</default_value_override>
+        <dependent/>
+        <dependent_override>false</dependent_override>
+        <display_override>false</display_override>
+        <element>state</element>
+        <mandatory>false</mandatory>
+        <mandatory_override>false</mandatory_override>
+        <name>x_snc_learning_hub_incidents</name>
+        <read_only>false</read_only>
+        <read_only_override>false</read_only_override>
+        <reference_qual/>
+        <reference_qual_override>false</reference_qual_override>
+        <sys_class_name>sys_dictionary_override</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 11:15:00</sys_created_on>
+        <sys_id>5637d7ffc3d51210aa2498ec0501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_dictionary_override_5637d7ffc3d51210aa2498ec0501319a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 11:15:00</sys_updated_on>
+    </sys_dictionary_override>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>sys_dictionary_override_5637d7ffc3d51210aa2498ec0501319a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override"><sys_dictionary_override action="INSERT_OR_UPDATE"><attributes/><attributes_override>false</attributes_override><base_table>task</base_table><calculation/><calculation_override>false</calculation_override><default_value>0</default_value><default_value_override>true</default_value_override><dependent/><dependent_override>false</dependent_override><display_override>false</display_override><element>state</element><mandatory>false</mandatory><mandatory_override>false</mandatory_override><name>x_snc_learning_hub_incidents</name><read_only>false</read_only><read_only_override>false</read_only_override><reference_qual/><reference_qual_override>false</reference_qual_override><sys_class_name>sys_dictionary_override</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-10-24 11:15:00</sys_created_on><sys_id>5637d7ffc3d51210aa2498ec0501319a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>state</sys_name><sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package><sys_policy/><sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope><sys_update_name>sys_dictionary_override_5637d7ffc3d51210aa2498ec0501319a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-10-24 11:15:00</sys_updated_on></sys_dictionary_override></record_update>]]></payload>
+        <payload_hash>1789702339</payload_hash>
+        <record_name>state</record_name>
+        <reverted_from/>
+        <source>1be0d19fc3919210aa2498ec05013175</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 11:15:00</sys_created_on>
+        <sys_id>ac471733c3191210aa2498ec050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>192be3caea70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 11:15:00</sys_updated_on>
+        <type>Dictionary Entry Override</type>
+        <update_guid>a047173357191210508d3e202a893cbd</update_guid>
+        <update_guid_history>a047173357191210508d3e202a893cbd:1789702339</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 11:16:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_dictionary_override">sys_dictionary_override</sys_db_object>
+        <sys_id>02a8c87afa1249808df6196001a4f100</sys_id>
+        <sys_metadata>5637d7ffc3d51210aa2498ec0501319a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>state</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent display_value="Resolution notes">03cd03b3c3d51210aa2498ec0501312d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>sys_dictionary_override_5637d7ffc3d51210aa2498ec0501319a</sys_update_name>
+        <sys_update_version display_value="sys_dictionary_override_5637d7ffc3d51210aa2498ec0501319a">ac471733c3191210aa2498ec050131bd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 11:16:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

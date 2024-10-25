@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item/>
+        <catalog_variable>IO:2cc3a2b7c3d11210aa2498ec050131ae</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-24 07:43:33</sys_created_on>
+        <sys_id>f8d666bbc3d11210aa2498ec05013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>caller_id</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_f8d666bbc3d11210aa2498ec05013197</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-24 07:43:33</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Readonly of caller field">a3b6e2bbc3d11210aa2498ec05013194</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>caller_id</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=f8d666bbc3d11210aa2498ec05013197"/>
+</record_update>
