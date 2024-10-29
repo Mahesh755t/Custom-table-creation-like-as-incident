@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="dl_definition">
+    <dl_definition action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <matcher_table>x_snc_learning_hub_priority</matcher_table>
+        <name>Creating custom table 2</name>
+        <run_on_form_change>true</run_on_form_change>
+        <run_on_insert>true</run_on_insert>
+        <run_on_update>true</run_on_update>
+        <source_table>x_snc_learning_hub_incidents</source_table>
+        <sys_class_name>dl_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-25 11:06:53</sys_created_on>
+        <sys_id>99de505cc3619210aa2498ec050131df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Creating custom table 2</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>dl_definition_99de505cc3619210aa2498ec050131df</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-25 11:06:53</sys_updated_on>
+    </dl_definition>
+</record_update>

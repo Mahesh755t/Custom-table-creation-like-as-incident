@@ -26,6 +26,7 @@
         <element label="Assignment group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
         <element choice="3" default="1" label="State" max_length="40" name="state" type="choice">
             <choice>
+                <element inactive_on_update="false" label="Reopen" sequence="6" value="reopen"/>
                 <element inactive_on_update="false" label="Resolved" sequence="3" value="4"/>
                 <element inactive_on_update="false" label="New" sequence="0" value="1"/>
                 <element inactive_on_update="false" label="In progress" sequence="1" value="2"/>
@@ -69,6 +70,7 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Linux" max_length="40" name="linux" type="string"/>
+        <element label="Field Create from dictionary" max_length="32" name="field_create_from_dictionary" type="string"/>
         <element label="Knowledge" max_length="40" name="knowledge" type="boolean"/>
         <element choice="1" dependent="category" dependent_on_field="category" label="Subcategory" max_length="32" name="subcategory" type="choice" use_dependent_field="true">
             <choice>

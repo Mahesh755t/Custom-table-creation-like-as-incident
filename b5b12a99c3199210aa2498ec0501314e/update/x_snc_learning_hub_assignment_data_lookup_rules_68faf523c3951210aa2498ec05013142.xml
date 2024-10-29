@@ -3,7 +3,7 @@
         <active>true</active>
         <assigned_to/>
         <assignment_group display_value="Email support" name="Email support">fe6b7163c3951210aa2498ec05013149</assignment_group>
-        <category/>
+        <category>network</category>
         <configuration_item/>
         <location/>
         <order>300</order>
@@ -12,13 +12,13 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-23 09:53:32</sys_created_on>
         <sys_id>68faf523c3951210aa2498ec05013142</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>300</sys_name>
         <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
         <sys_update_name>x_snc_learning_hub_assignment_data_lookup_rules_68faf523c3951210aa2498ec05013142</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-23 10:53:17</sys_updated_on>
+        <sys_updated_on>2024-10-28 09:34:58</sys_updated_on>
     </x_snc_learning_hub_assignment_data_lookup_rules>
 </record_update>

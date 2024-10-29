@@ -129,5 +129,24 @@
             <sys_updated_on>2024-10-21 07:45:44</sys_updated_on>
             <value>6</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reopen</label>
+            <language>en</language>
+            <name>x_snc_learning_hub_learning_hub</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-10-28 08:42:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-10-28 08:42:26</sys_updated_on>
+            <value>reopen</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

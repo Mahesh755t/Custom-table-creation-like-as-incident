@@ -11,10 +11,10 @@
         <delivery_plan/>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description><![CDATA[<p>Reqeust        </p>]]></description>
+        <description><![CDATA[<p>Request        </p>]]></description>
         <display_price_property>non_zero</display_price_property>
         <entitlement_script/>
-        <flow_designer_flow display_value="New Laptop Request">70056fbfc3191210aa2498ec050131ff</flow_designer_flow>
+        <flow_designer_flow/>
         <fulfillment_automation_level>unspecified</fulfillment_automation_level>
         <group/>
         <hide_sp>false</hide_sp>
@@ -38,7 +38,7 @@
         <no_order_now>false</no_order_now>
         <no_proceed_checkout>false</no_proceed_checkout>
         <no_quantity>false</no_quantity>
-        <no_quantity_v2>false</no_quantity_v2>
+        <no_quantity_v2>true</no_quantity_v2>
         <no_save_as_draft>false</no_save_as_draft>
         <no_search>false</no_search>
         <no_wishlist_v2>false</no_wishlist_v2>
@@ -66,25 +66,25 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-24 12:56:22</sys_created_on>
         <sys_id>db1ee7f3c3591210aa2498ec050131bd</sys_id>
-        <sys_mod_count>25</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>New Laptop Request</sys_name>
         <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
         <sys_policy/>
         <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
         <sys_update_name>sc_cat_item_db1ee7f3c3591210aa2498ec050131bd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-24 13:33:59</sys_updated_on>
+        <sys_updated_on>2024-10-28 11:58:07</sys_updated_on>
         <taxonomy_topic/>
         <template/>
         <template_manager_roles/>
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>25</version>
+        <version>44</version>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
-        <workflow/>
+        <workflow display_value="New Laptop Request">49ebfbc1c3e51210aa2498ec0501313a</workflow>
     </sc_cat_item>
     <sys_translated_text action="delete_multiple" query="documentkey=db1ee7f3c3591210aa2498ec050131bd"/>
     <fx_price action="delete_multiple" query="id=db1ee7f3c3591210aa2498ec050131bd"/>

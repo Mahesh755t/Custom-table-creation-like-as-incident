@@ -3,11 +3,21 @@
         <element attributes="edge_encryption_enabled=true" label="Resolution notes" max_length="4000" name="resolution_notes" type="string"/>
         <element attributes="encode_utf8=false" label="Parent Incident" max_length="32" name="parent_incident" reference="problem" type="reference"/>
         <element attributes="encode_utf8=false" label="Change Request" max_length="32" name="change_request" reference="change_request" type="reference"/>
-        <element choice="1" choice_field="urgency" choice_table="x_snc_learning_hub_learning_hub" label="Urgency" max_length="40" name="urgency1" type="choice">
-            <choice/>
+        <element choice="3" default="3" label="Urgency" max_length="40" name="urgency1" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="3 - Low" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="1 - High" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2 - Medium" sequence="2" value="2"/>
+            </choice>
         </element>
-        <element choice="1" choice_field="priority" choice_table="x_snc_learning_hub_learning_hub" label="Priority" max_length="40" name="priority1" read_only="true" type="choice">
-            <choice/>
+        <element choice="3" default="5" label="Priority" max_length="40" name="priority1" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="1 - Critical" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="2 - High" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3 - Moderate" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="4 - Low" sequence="4" value="4"/>
+                <element inactive_on_update="false" label="5 - Planning" sequence="5" value="5"/>
+            </choice>
         </element>
         <element attributes="encode_utf8=false" label="Resolved by" max_length="32" name="resolved_by" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Problem" max_length="32" name="problem" reference="problem" type="reference"/>
@@ -25,8 +35,12 @@
                 <element inactive_on_update="false" label="Duplicate" sequence="0" value="Duplicate"/>
             </choice>
         </element>
-        <element choice="1" choice_field="impact" choice_table="x_snc_learning_hub_learning_hub" default="3" label="Impact" max_length="40" name="impact1" type="choice">
-            <choice/>
+        <element choice="1" default="3" label="Impact" max_length="40" name="impact1" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="2 - Medium" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="3 - Low" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="1 - High" sequence="1" value="1"/>
+            </choice>
         </element>
         <element label="Caller Id" mandatory="true" max_length="32" name="caller_id" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" choice="1" choice_field="subcategory" choice_table="incident" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">

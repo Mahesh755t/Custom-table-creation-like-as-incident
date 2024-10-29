@@ -10,13 +10,13 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
-        <choice_field>urgency</choice_field>
-        <choice_table>x_snc_learning_hub_learning_hub</choice_table>
+        <choice>3</choice>
+        <choice_field/>
+        <choice_table/>
         <column_label>Urgency</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>3</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_learning_hub_incidents_urgency1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-24 11:06:30</sys_updated_on>
+        <sys_updated_on>2024-10-25 10:54:27</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
