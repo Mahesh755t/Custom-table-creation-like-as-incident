@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5c0104aac3e11210aa2498ec0501310c" extends="sys_import_set_row" label="groups data" max_length="40" name="x_snc_learning_hub_groups_data" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Group email" label="Group email" max_length="40" name="u_group_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+    </element>
+</database>
