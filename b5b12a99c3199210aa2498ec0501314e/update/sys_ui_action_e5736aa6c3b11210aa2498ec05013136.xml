@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>copy_incident</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+    getMessages(["Copy Incident", "Caller", "Failed to copy Incident.", "Include attachments", "Copy", "Create a new incident by copying the current incident. Specify a caller to proceed."], onCopy);
+
+    function onCopy(tMsgs) {
+        var fields = [];
+        fields.push({
+            type: 'reference',
+            name: 'caller_id',
+            label: tMsgs["Caller"],
+            mandatory: true,
+            reference: 'sys_user',
+            referringTable: 'incident',
+            referringRecordId: g_form.getUniqueValue()
+        });
+        var ga = new GlideAjax('IncidentUtils2');
+        ga.addParam('sysparm_name', 'getIncidentCopyAttachDetails');
+        ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+        ga.getXMLAnswer(function(response) {
+            response = JSON.parse(response + '');
+            if (response && response.hasAttachments) {
+                fields.push({
+                    type: 'boolean',
+                    name: 'include_attachments',
+                    label: tMsgs["Include attachments"],
+                    mandatory: false,
+                    value: response.copyAttachProp + '' === "true" ? true : false,
+                    referringTable: 'incident',
+                    referringRecordId: g_form.getUniqueValue()
+                });
+            }
+            g_modal.showFields({
+                title: tMsgs["Copy Incident"],
+                size: "md",
+                fields: fields,
+                confirmTitle: tMsgs["Copy"],
+                confirmType: "confirm",
+                instruction: tMsgs["Create a new incident by copying the current incident. Specify a caller to proceed."]
+            }).then(function(fieldValues) {
+                var updatedFields = {};
+                fieldValues.updatedFields.forEach(function(field) {
+                    updatedFields[field.name] = field.value;
+                });
+                ga = new GlideAjax('IncidentUtils2');
+                ga.addParam('sysparm_name', 'makeIncidentCopy');
+                ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+                ga.addParam('sysparm_fields', JSON.stringify(updatedFields));
+                ga.getXMLAnswer(function(response) {
+                    if (response + '' !== "false")
+                        g_aw.openRecord("incident", response + "");
+                    else
+                        g_form.addErrorMessage(tMsgs["Failed to copy Incident."]);
+                });
+            });
+        });
+    }
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.caller_id == gs.getUserID() </condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>true</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Copy Incident</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[// function OnCopyIncidentClick(){
+// 	var srcSysId = g_form.getUniqueValue();
+// 	var ga = new GlideAjax('IncidentUtils2');
+// 	ga.addParam('sysparm_name', 'getIncidentQueryParams');
+// 	ga.addParam('sysparm_src_sysid', srcSysId);
+// 	ga.addParam('sysparm_ui_action', "copy_incident");
+// 	ga.setWantSessionMessages(true);
+// 	ga.getXMLAnswer(function(queryParam){
+// 		if (queryParam) {
+// 			var ck;
+// 			if (typeof g_ck != 'undefined' && g_ck != "")
+// 				ck = g_ck;
+
+// 			var gotoUrl = [];
+// 			gotoUrl.push('srcSysID=' + srcSysId);
+// 			gotoUrl.push('newSysID=$sys_id');
+// 			gotoUrl.push('sysparm_returned_action=$action');
+// 			gotoUrl.push('sysparm_ui_action=copy_incident');
+// 			if (ck)
+// 				gotoUrl.push('sysparm_ck=' + ck);
+
+// 			gotoUrl = 'CopyIncidentRelatedLists.do?' + gotoUrl.join('&');
+
+// 			var form = cel('form', document.body);
+// 			hide(form);
+// 			form.method = "POST";
+// 			form.action = g_form.getTableName() + ".do";
+// 			if (ck)
+// 				addParam(form, 'sysparm_ck', g_ck);
+// 			addParam(form, 'sys_id', '-1');
+// 			addParam(form, 'sysparm_query', queryParam);
+// 			addParam(form, 'sysparm_goto_url', gotoUrl);
+// 			form.submit();
+// 		}else{
+// 			g_form.addErrorMessage("Failed to copy incident");
+// 		}
+// 	});
+// }
+// function addParam(form, name, val) {
+// 	var inp = cel('textarea', form);
+// 	inp.name = name;
+// 	inp.value = val;
+// }
+var newRec = new GlideRecord('x_snc_learning_hub_learning_hub');
+newRec.newRecord();
+newRec.short_description = current.short_description;
+newRec.description = current.description;
+newRec.update();
+action.setRedirectURL(newRec);]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 06:48:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e5736aa6c3b11210aa2498ec05013136</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Copy Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_ui_action_e5736aa6c3b11210aa2498ec05013136</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-19 08:53:28</sys_updated_on>
+        <table>x_snc_learning_hub_learning_hub</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e5736aa6c3b11210aa2498ec05013136</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 06:48:52</sys_created_on>
+        <sys_id>aab36e26c3b11210aa2498ec050131ad</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-19 07:06:46</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

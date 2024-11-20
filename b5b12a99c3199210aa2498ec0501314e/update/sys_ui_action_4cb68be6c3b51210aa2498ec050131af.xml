@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>sysverb_child_new</action_name>
+        <active>false</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Create a child incident similar to the current incident.</comments>
+        <condition>(state !=6 || state !=7 ||state !=8) &amp;&amp; IncidentUtils.isCreateChildIncidentEnabled()</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Create Child Incident</name>
+        <onclick>onCreateChildIncident()</onclick>
+        <order>101</order>
+        <script><![CDATA[var parentIncidentID = g_form.getUniqueValue();
+var newIncident = new GlideRecord('incident');
+newIncident.initialize();
+newIncident.setValue('short_description', 'New Child Incident');
+newIncident.setValue('parent_incident', parentIncidentID);
+// newIncident.insert();]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 09:25:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4cb68be6c3b51210aa2498ec050131af</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Create Child Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_ui_action_4cb68be6c3b51210aa2498ec050131af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-15 05:12:01</sys_updated_on>
+        <table>x_snc_learning_hub_learning_hub</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4cb68be6c3b51210aa2498ec050131af</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 09:25:06</sys_created_on>
+        <sys_id>5b77c7e6c3b51210aa2498ec050131de</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-14 09:25:06</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

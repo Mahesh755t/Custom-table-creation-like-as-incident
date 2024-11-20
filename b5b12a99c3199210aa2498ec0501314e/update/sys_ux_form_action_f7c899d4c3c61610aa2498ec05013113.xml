@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Close Incident</name>
+        <specificity>10</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-19 11:50:54</sys_created_on>
+        <sys_id>f7c899d4c3c61610aa2498ec05013113</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Close Incident</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_ux_form_action_f7c899d4c3c61610aa2498ec05013113</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-19 11:50:54</sys_updated_on>
+        <table>x_snc_learning_hub_learning_hub</table>
+        <ui_action display_value="Close Incident">d17899d4c3c61610aa2498ec050131d2</ui_action>
+    </sys_ux_form_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=f7c899d4c3c61610aa2498ec05013113"/>
+</record_update>

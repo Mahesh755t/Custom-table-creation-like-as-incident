@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_learning_hub.createIncidentTask</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>createIncidentTask</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var createIncidentTask = Class.create();
+createIncidentTask.prototype = {
+    initialize: function() {},
+     getNewIncidentTaskLink: function(incidentGr) {
+        if (!incidentGr || incidentGr.sys_id.nil())
+            return null;
+        return ("incident_task.do?sys_id=-1&sysparm_query=" + encodeURIComponent("u_incident_custom=" + incidentGr.getUniqueValue()));
+    },
+
+    type: 'createIncidentTask'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 05:26:09</sys_created_on>
+        <sys_id>e260166ac3311210aa2498ec050131b6</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>createIncidentTask</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_script_include_e260166ac3311210aa2498ec050131b6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-14 08:55:22</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e260166ac3311210aa2498ec050131b6</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-14 05:26:09</sys_created_on>
+        <sys_id>fac0d6aac3311210aa2498ec050131d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-14 05:26:09</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

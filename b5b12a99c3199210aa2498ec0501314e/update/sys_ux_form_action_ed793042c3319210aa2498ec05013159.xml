@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_form_action">
+    <sys_ux_form_action action="INSERT_OR_UPDATE">
+        <action_type>ui_action</action_type>
+        <active>true</active>
+        <declarative_action/>
+        <description/>
+        <name>Assign to me</name>
+        <specificity>20</specificity>
+        <sys_class_name>sys_ux_form_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:47:37</sys_created_on>
+        <sys_id>ed793042c3319210aa2498ec05013159</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign to me</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_ux_form_action_ed793042c3319210aa2498ec05013159</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:47:37</sys_updated_on>
+        <table>incident</table>
+        <ui_action/>
+    </sys_ux_form_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=ed793042c3319210aa2498ec05013159"/>
+</record_update>

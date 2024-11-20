@@ -7,7 +7,7 @@
         <affected_field_on_event/>
         <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_snc_learning_hub_learning_hub</collection>
-        <condition table="x_snc_learning_hub_learning_hub">stateCHANGESTO5^EQ<item display_value="Closed" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="5"/>
+        <condition table="x_snc_learning_hub_learning_hub">stateCHANGESTO5^EQ<item display_value="5" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="5"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>

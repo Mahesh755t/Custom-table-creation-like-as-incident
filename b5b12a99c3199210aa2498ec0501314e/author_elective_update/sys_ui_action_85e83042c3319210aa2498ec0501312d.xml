@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>ws_assign_incident_to_me</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Assign the incident to current user</comments>
+        <condition>new global.IncidentUtils().canAssignToMe(current);</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Assign to me</name>
+        <onclick/>
+        <order>10</order>
+        <script><![CDATA[assignToMe();
+
+function assignToMe() {
+    if (current.assignment_group.nil()) {
+        var memberGroups = new global.IncidentUtils().getMemberGroups(gs.getUserID(), 2);
+        if (memberGroups.length > 1) {
+            gs.addErrorMessage(gs.getMessage("Assigned to user {0} is member of multiple groups, please select one as Assignment group ", [gs.getUserDisplayName()]));
+            return;
+        }
+        if (memberGroups.length == 1)
+            current.assignment_group = memberGroups[0];
+    }
+    current.assigned_to = gs.getUserID();
+    current.update();
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:47:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>85e83042c3319210aa2498ec0501312d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign to me</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_ui_action_85e83042c3319210aa2498ec0501312d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:47:37</sys_updated_on>
+        <table>incident</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="DELETE">
+        <id>85e83042c3319210aa2498ec0501312d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:47:35</sys_created_on>
+        <sys_id>c9797442c3319210aa2498ec05013147</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:47:35</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>sys_ui_action_85e83042c3319210aa2498ec0501312d</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;ws_assign_incident_to_me&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Assign the incident to current user&lt;/comments&gt;&lt;condition&gt;new global.IncidentUtils().canAssignToMe(current);&lt;/condition&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;true&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;true&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Assign to me&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;10&lt;/order&gt;&lt;script&gt;&lt;![CDATA[assignToMe();
+
+function assignToMe() {
+    if (current.assignment_group.nil()) {
+        var memberGroups = new global.IncidentUtils().getMemberGroups(gs.getUserID(), 2);
+        if (memberGroups.length &gt; 1) {
+            gs.addErrorMessage(gs.getMessage("Assigned to user {0} is member of multiple groups, please select one as Assignment group ", [gs.getUserDisplayName()]));
+            return;
+        }
+        if (memberGroups.length == 1)
+            current.assignment_group = memberGroups[0];
+    }
+    current.assigned_to = gs.getUserID();
+    current.update();
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-12 09:47:37&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;85e83042c3319210aa2498ec0501312d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Assign to me&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Incidents" source="x_snc_learning_hub"&gt;b5b12a99c3199210aa2498ec0501314e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Incidents"&gt;b5b12a99c3199210aa2498ec0501314e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_85e83042c3319210aa2498ec0501312d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-12 09:47:37&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;85e83042c3319210aa2498ec0501312d&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-12 09:47:35&lt;/sys_created_on&gt;&lt;sys_id&gt;c9797442c3319210aa2498ec05013147&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-12 09:47:35&lt;/sys_updated_on&gt;&lt;table&gt;sys_ui_action&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>202483265</payload_hash>
+        <record_name>Assign to me</record_name>
+        <reverted_from/>
+        <source>e768b4cec3fd5210aa2498ec05013118</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:47:37</sys_created_on>
+        <sys_id>a1793082c3319210aa2498ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1931fc57fb50000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:47:37</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>a5793082e3319210abc5b78b9a8b489b</update_guid>
+        <update_guid_history>a5793082e3319210abc5b78b9a8b489b:202483265</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 12:32:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>0d8738f9660842bba08cc0563f610c71</sys_id>
+        <sys_metadata>85e83042c3319210aa2498ec0501312d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Assign to me</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent display_value="Incident">fcb9dacb659012104f340572a94740fa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>sys_ui_action_85e83042c3319210aa2498ec0501312d</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_85e83042c3319210aa2498ec0501312d">a1793082c3319210aa2498ec0501319c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 12:32:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

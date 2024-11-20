@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="DELETE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:47:37</sys_created_on>
+        <sys_id>a2e83042c3319210aa2498ec05013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.itil</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_ui_action display_value="">85e83042c3319210aa2498ec0501312d</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_a2e83042c3319210aa2498ec05013131</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:47:37</sys_updated_on>
+        <sys_user_role display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</sys_user_role>
+    </sys_ui_action_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>sys_ui_action_role_a2e83042c3319210aa2498ec05013131</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_role"><sys_ui_action_role action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-11-12 09:47:37</sys_created_on><sys_id>a2e83042c3319210aa2498ec05013131</sys_id><sys_mod_count>0</sys_mod_count><sys_name>.itil</sys_name><sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package><sys_policy/><sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope><sys_ui_action display_value="">85e83042c3319210aa2498ec0501312d</sys_ui_action><sys_update_name>sys_ui_action_role_a2e83042c3319210aa2498ec05013131</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-11-12 09:47:37</sys_updated_on><sys_user_role display_value="itil" name="itil">282bf1fac6112285017366cb5f867469</sys_user_role></sys_ui_action_role></record_update>]]></payload>
+        <payload_hash>603238626</payload_hash>
+        <record_name>.itil</record_name>
+        <reverted_from/>
+        <source>e768b4cec3fd5210aa2498ec05013118</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-12 09:47:37</sys_created_on>
+        <sys_id>1d793042c3319210aa2498ec05013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1931fc57f120000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-12 09:47:37</sys_updated_on>
+        <type>UI Action Role</type>
+        <update_guid>11793042203192107e525c9f857ffb55</update_guid>
+        <update_guid_history>11793042203192107e525c9f857ffb55:603238626</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 12:32:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_role">sys_ui_action_role</sys_db_object>
+        <sys_id>286bb8e09b3c465694858bfda3dc1e44</sys_id>
+        <sys_metadata>a2e83042c3319210aa2498ec05013131</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>.itil</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>sys_ui_action_role_a2e83042c3319210aa2498ec05013131</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_role_a2e83042c3319210aa2498ec05013131">1d793042c3319210aa2498ec05013155</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 12:32:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

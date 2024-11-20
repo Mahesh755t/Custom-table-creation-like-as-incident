@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_learning_hub_learning_hub</collection>
+        <condition>current.isValidRecord() &amp;&amp; (current.state.changesTo(6) || current.additional_comments.changes() || current.work_notes.changes()) &amp;&amp; (current.child_incidents &gt; 0)</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Child Incidents</name>
+        <order>1000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[updateChildIncidents();
+
+function updateChildIncidents() {
+	if (current.state.changesTo(6))
+		resolveChildIncidents();
+	else {
+		var value;
+		
+		if (current.comments.changes()) {
+			value = deriveFieldValue('additional_comments', gs.getMessage('Comment copied from Parent Incident'));
+			
+			if (value && value != "")
+				executeFlowAction(current, 'additional_comments', value);
+		}
+		
+		if (current.work_notes.changes()) {
+			value = deriveFieldValue('work_notes', gs.getMessage('Work note copied from Parent Incident'));
+			
+			if (value && value != "")
+				executeFlowAction(current, 'work_notes', value);
+		}
+		
+	}
+}
+
+function executeFlowAction (parentIncidentGr, fieldName, value) {
+	
+	try {
+		var inputs = {};
+		inputs['field'] = fieldName; // String 
+		inputs['value'] = value; // String 
+		inputs['parent_incident_gr'] = parentIncidentGr; // GlideRecord of table: incident
+		inputs['state_changes'] = current.state.changes();
+		sn_fd.FlowAPI.getRunner().action('global.update_child_incidents').inBackground().withInputs(inputs).run();
+					
+	} catch (ex) {
+		var message = ex.message;
+		gs.error("Error while updating parent incident {0}, Error: {1}", [parentIncidentGr.getDisplayValue(), message]);
+	}
+	
+}
+
+function deriveFieldValue(fieldName, msg) {
+	
+	var fieldRawValue = current.getValue(fieldName) + '';
+	var fieldValue = fieldRawValue.trim();
+	
+	if (fieldValue && fieldValue.length > 0) {
+		
+		if (fieldRawValue.indexOf(msg) == 0)
+			return (fieldRawValue);
+		else
+			return (msg + ": " + fieldRawValue);
+	}
+	
+	return;
+}
+
+//
+// Resolve active, unresolved incidents that are children of the current incident
+//
+function resolveChildIncidents() {
+    //check if update is valid or aborted before updating child incidents
+	if(current.isActionAborted())
+		return;
+
+	var incident = new GlideRecord("incident");
+	incident.addActiveQuery();
+	incident.addQuery("parent_incident", current.sys_id);
+	incident.addQuery("state", "!=", 6);
+	incident.query();
+	var msg = "";
+	while (incident.next()) {
+		gs.print("Incident " + incident.number + ' resolved based on resolution of Parent Incident ' + current.number);
+		incident.state = 6;
+		if (incident.isValidField("resolution_notes") && incident.resolution_notes.nil()) {
+			msg = gs.getMessage('{0} copied from Parent Incident', current.resolution_notes.getLabel());
+			if (current.resolution_notes.toString().indexOf(msg) == 0)
+				incident.resolution_notes = current.resolution_notes;
+			else
+				incident.resolution_notes = msg + ": " + current.resolution_notes;
+		}
+		if(incident.isValidField("resolution_code"))
+			incident.resolution_code = current.resolution_code;
+		msg = gs.getMessage("Resolved based on resolution of Parent Incident.");
+		if (current.additional_comments.toString().indexOf(msg) == 0)
+			incident.additional_comments = current.additional_comments;
+		else
+			incident.additional_comments = msg + " " + current.additional_comments;
+		incident.work_notes = current.work_notes;
+		incident.update();
+	}
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-18 06:05:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>88cefebfc3b59210aa2498ec050131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Update Child Incidents</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_script_88cefebfc3b59210aa2498ec050131c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-18 06:05:46</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=88cefebfc3b59210aa2498ec050131c1"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>88cefebfc3b59210aa2498ec050131c1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-18 06:05:45</sys_created_on>
+        <sys_id>d23083ffc3b59210aa2498ec050131ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-18 06:05:45</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

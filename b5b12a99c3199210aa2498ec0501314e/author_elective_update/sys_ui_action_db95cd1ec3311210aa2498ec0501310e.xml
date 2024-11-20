@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>resolve_incident</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick() {
+	//Set the 'Incident state' and 'State' values to 'Resolved', and display mandatory fields
+	// g_form.setValue('incident_state', 6);
+	g_form.setValue('state', 6);
+	g_form.setValue('resolved_by', g_user.userID, g_user.getFullName());
+
+	// Call the UI Action and skip the 'onclick' function
+}]]></client_script_v2>
+        <comments/>
+        <condition>current.state != 6 &amp;&amp; current.state != 7</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>true</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Resolve</name>
+        <onclick>resolveIncident()</onclick>
+        <order>100</order>
+        <script><![CDATA[function resolveIncident(){
+	//Set the 'Incident state' and 'State' values to 'Resolved', and display mandatory fields
+	//g_form.setValue('incident_state', 6);
+	g_form.setValue('state', 6);
+	g_form.setValue('resolved_by', g_user.userID);
+	
+	gsftSubmit(null, g_form.getFormElement(), 'resolve_incident'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+	serverResolve();
+
+function serverResolve(){
+	//current.incident_state = IncidentState.RESOLVED;
+	current.state = 6;
+	current.resolved_by = gs.getUserID();
+	current.update();
+	//action.setRedirectURL(current);
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 05:22:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>db95cd1ec3311210aa2498ec0501310e</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Resolve</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_ui_action_db95cd1ec3311210aa2498ec0501310e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-15 05:05:03</sys_updated_on>
+        <table>x_snc_learning_hub_learning_hub</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_es_latest_script action="DELETE">
+        <id>db95cd1ec3311210aa2498ec0501310e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-13 05:22:37</sys_created_on>
+        <sys_id>2166c1dec3311210aa2498ec050131b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-13 05:22:37</sys_updated_on>
+        <table>sys_ui_action</table>
+        <use_es_latest>false</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</application>
+        <file_path/>
+        <instance_id>222bb0cc1bd64294168f4089bd4bcb5a</instance_id>
+        <instance_name>dev271568</instance_name>
+        <name>sys_ui_action_db95cd1ec3311210aa2498ec0501310e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;resolve_incident&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick() {
+	//Set the 'Incident state' and 'State' values to 'Resolved', and display mandatory fields
+	// g_form.setValue('incident_state', 6);
+	g_form.setValue('state', 6);
+	g_form.setValue('resolved_by', g_user.userID, g_user.getFullName());
+
+	// Call the UI Action and skip the 'onclick' function
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition&gt;current.state != 6 &amp;amp;&amp;amp; current.state != 7&lt;/condition&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;true&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;true&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Resolve&lt;/name&gt;&lt;onclick&gt;resolveIncident()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function resolveIncident(){
+	//Set the 'Incident state' and 'State' values to 'Resolved', and display mandatory fields
+	//g_form.setValue('incident_state', 6);
+	g_form.setValue('state', 6);
+	g_form.setValue('resolved_by', g_user.userID);
+	
+	gsftSubmit(null, g_form.getFormElement(), 'resolve_incident'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+	serverResolve();
+
+function serverResolve(){
+	//current.incident_state = IncidentState.RESOLVED;
+	current.state = 6;
+	current.resolved_by = gs.getUserID();
+	current.update();
+	//action.setRedirectURL(current);
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-13 05:22:39&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;db95cd1ec3311210aa2498ec0501310e&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;Resolve&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Incidents" source="x_snc_learning_hub"&gt;b5b12a99c3199210aa2498ec0501314e&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Incidents"&gt;b5b12a99c3199210aa2498ec0501314e&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_db95cd1ec3311210aa2498ec0501310e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-15 05:05:03&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_learning_hub_learning_hub&lt;/table&gt;&lt;ui11_compatible&gt;false&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;db95cd1ec3311210aa2498ec0501310e&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-13 05:22:37&lt;/sys_created_on&gt;&lt;sys_id&gt;2166c1dec3311210aa2498ec050131b7&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-13 05:22:37&lt;/sys_updated_on&gt;&lt;table&gt;sys_ui_action&lt;/table&gt;&lt;use_es_latest&gt;false&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-542464957</payload_hash>
+        <record_name>Resolve</record_name>
+        <reverted_from/>
+        <source>e768b4cec3fd5210aa2498ec05013118</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-15 05:05:03</sys_created_on>
+        <sys_id>bb851f32c3315210aa2498ec050131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1932e35e2860000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-15 05:05:03</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>63851f32263152104cb27d50acfa32ab</update_guid>
+        <update_guid_history>63851f32263152104cb27d50acfa32ab:-542464957,c654973e51fd1210a20b1dc2ed23ee79:-585239784,6c629bfa2cfd12101877be717c9f55f8:-236182139,2832933ef6fd12102eaaf1cd300d27d0:1554482043,b9c19bba2ffd1210bfc2e8a1c823cbca:808454791,f1e013baf4fd12105383dd3dc871b028:442248312,6ce1eadafa39121035204da3493edb2c:792401455,de8122da5239121062b7ed4fd8f7ca7f:923607947,e01166da09391210058bb0b6d58d29df:155608308,a5d0ee9a88391210e32199a31ac858d7:-623328425,9eb0e69a4b391210c46f041676533341:54657975,e4cc1256173912107f8d6e71ab3773a2:1506493975,1f4c8d928c7112109aada01344020191:-70237547,80b9cd16ca7112105e63c8d01290e07d:-1742746466,7a384dd27a71121052bd40070a46f2aa:1424363143,0de749d27671121096e751b346a94392:-1193591157,20a70d923e711210695eccbbcd79b2db:1049151113,39478d526571121078b3a3169e4c9555:184835834,02660552a97112104c09991495ea0b73:1478105596</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-15 05:06:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>67c4614446c84da2812d6ba2091f1064</sys_id>
+        <sys_metadata>db95cd1ec3311210aa2498ec0501310e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Resolve</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_parent display_value="Incidents">9b022eddc3199210aa2498ec0501312b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_scope_delete display_value="">259dacfb1af44aa086e42762d8478040</sys_scope_delete>
+        <sys_update_name>sys_ui_action_db95cd1ec3311210aa2498ec0501310e</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_db95cd1ec3311210aa2498ec0501310e">bb851f32c3315210aa2498ec050131ab</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-15 05:06:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

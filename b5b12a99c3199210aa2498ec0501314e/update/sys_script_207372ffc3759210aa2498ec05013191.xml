@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_learning_hub_learning_hub</collection>
+        <condition>current.parent_incident.changes() &amp;&amp; !current.parent_incident.nil()</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Derive State value from Parent Incident</name>
+        <order>90</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var ON_HOLD_REASON_AWAITING_CALLER = 'Awaiting caller';
+
+	// If child incident is already Closed or Cancelled, child incident should not get re-opened
+	if (current.incident_state == 7 || current.incident_state == 8)
+		return;
+
+	// If parent incident is already Closed or Cancelled, child incident state should not get derived from parent incident
+	if (current.parent_incident.incident_state == 7 || current.parent_incident.incident_state == 8)
+		return;
+	
+	// If parent incident was re-opened by ESS user, child incident should not get re-opened from a resolved state
+	var lastReopenedBy = gs.getUser().getUserByID(current.parent_incident.reopened_by);
+	if (!lastReopenedBy.hasRole("itil,sn_incident_write"))
+		if (current.incident_state == 6)
+			return;
+
+	// Add a message if child incidents state is being updated to resolved, due to parent incident being resolved
+	// Update child incident's close code and close notes to match that of parent incident
+	if (current.incident_state != 6 && current.parent_incident.incident_state == 6) {
+		var msg = "";
+				
+		if (current.isValidField("resolution_notes") && current.resolution_notes.nil()) {
+			msg = gs.getMessage('{0} copied from Parent Incident', current.resolution_notes.getLabel());
+			if (current.parent_incident.resolution_notes.toString().indexOf(msg) == 0)
+				current.resolution_notes = current.parent_incident.resolution_notes;
+			else
+				current.resolution_notes = msg + ": " + current.parent_incident.resolution_notes;
+		}
+		if(current.isValidField("resolution_code"))
+			current.resolution_code = current.parent_incident.resolution_code;
+
+		msg = gs.getMessage("Resolved based on resolution of Parent Incident.");
+		if (current.parent_incident.additional_comments.toString().indexOf(msg) == 0)
+			current.additional_comments = current.parent_incident.additional_comments;
+		else
+			current.additional_comments = msg + " " + current.parent_incident.additional_comments;
+	}
+	else {
+		// States other than Resolved should not get synced up if "com.snc.best_practice.incident.kingston" is not active
+		// So that customers upgrading from prior to Kingston, do not see a change in behavior
+		if (!pm.isActive("com.snc.best_practice.incident.kingston"))
+			return;
+		
+		// If parent_incident is on hold due to AWAITING_CALLER, then child incident state should not get updated
+		if ( current.parent_incident.incident_state == 3 && current.parent_incident.on_hold_reason == ON_HOLD_REASON_AWAITING_CALLER)
+			return;
+	}
+
+	// Update child incident's Incident State, State and On Hold Reason fields to match that of parent incident
+	current.incident_state = current.parent_incident.incident_state;
+	current.state = current.parent_incident.state;
+	current.on_hold_reason = current.parent_incident.on_hold_reason;
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-18 05:19:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>207372ffc3759210aa2498ec05013191</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Derive State value from Parent Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_script_207372ffc3759210aa2498ec05013191</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-18 05:19:34</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=207372ffc3759210aa2498ec05013191"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>207372ffc3759210aa2498ec05013191</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-18 05:19:33</sys_created_on>
+        <sys_id>29a5b273c3b59210aa2498ec05013150</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-18 05:19:33</sys_updated_on>
+        <table>sys_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
