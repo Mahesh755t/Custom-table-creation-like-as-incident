@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -43,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>db98bab7c3b59210aa2498ec050131f8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Incident State Change to In Progress</sys_name>
         <sys_overrides/>
         <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
@@ -51,7 +51,7 @@
         <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
         <sys_update_name>sys_script_db98bab7c3b59210aa2498ec050131f8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-18 05:33:27</sys_updated_on>
+        <sys_updated_on>2024-11-26 14:03:32</sys_updated_on>
         <template>state=2^incident_state=2^EQ</template>
         <when>before</when>
     </sys_script>

@@ -141,6 +141,7 @@
         </element>
         <element attributes="encode_utf8=false" label="Caller id" mandatory="true" max_length="32" name="caller_id" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Problem" max_length="32" name="problem" reference="problem" type="reference"/>
+        <element label="Service" max_length="32" name="business_service" reference="cmdb_ci_service" type="reference"/>
         <element choice="2" label="Short description" mandatory="true" max_length="32" name="short_description" type="string">
             <choice/>
         </element>
@@ -151,45 +152,48 @@
             <element name="assignment_group"/>
         </index>
         <index name="index3">
-            <element name="caller_id"/>
+            <element name="business_service"/>
         </index>
         <index name="index4">
-            <element name="caused_by_change"/>
+            <element name="caller_id"/>
         </index>
         <index name="index5">
-            <element name="change_request"/>
+            <element name="caused_by_change"/>
         </index>
         <index name="index6">
-            <element name="closed_by"/>
+            <element name="change_request"/>
         </index>
         <index name="index7">
-            <element name="company"/>
+            <element name="closed_by"/>
         </index>
         <index name="index8">
-            <element name="configuration_item"/>
+            <element name="company"/>
         </index>
         <index name="index9">
-            <element name="location"/>
+            <element name="configuration_item"/>
         </index>
         <index name="index10">
-            <element name="origin_id"/>
+            <element name="location"/>
         </index>
         <index name="index11">
-            <element name="parent_incident"/>
+            <element name="origin_id"/>
         </index>
         <index name="index12">
-            <element name="problem"/>
+            <element name="parent_incident"/>
         </index>
         <index name="index13">
-            <element name="reopened_by"/>
+            <element name="problem"/>
         </index>
         <index name="index14">
-            <element name="resolved_by"/>
+            <element name="reopened_by"/>
         </index>
         <index name="index15">
-            <element name="service"/>
+            <element name="resolved_by"/>
         </index>
         <index name="index16">
+            <element name="service"/>
+        </index>
+        <index name="index17">
             <element name="service_offering"/>
         </index>
     </element>

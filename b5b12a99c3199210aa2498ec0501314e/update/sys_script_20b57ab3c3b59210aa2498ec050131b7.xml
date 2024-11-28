@@ -6,13 +6,13 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_snc_learning_hub_learning_hub</collection>
-        <condition>current.isValidRecord() &amp;&amp; (current.incident_state.changes() || (current.incident_state == IncidentState.ON_HOLD &amp;&amp; current.on_hold_reason.changes())) &amp;&amp; (current.child_incidents &gt; 0)</condition>
+        <condition>current.isValidRecord() &amp;&amp; (current.incident_state.changes() || (current.incident_state == 3 &amp;&amp; current.on_hold_reason.changes())) &amp;&amp; (current.child_incidents &gt; 0)</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -76,7 +76,7 @@ function updateChildIncidents(updateChildState, updateOnHoldReason) {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>20b57ab3c3b59210aa2498ec050131b7</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Sync Child Incident State</sys_name>
         <sys_overrides/>
         <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
@@ -84,7 +84,7 @@ function updateChildIncidents(updateChildState, updateOnHoldReason) {
         <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
         <sys_update_name>sys_script_20b57ab3c3b59210aa2498ec050131b7</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-18 05:26:28</sys_updated_on>
+        <sys_updated_on>2024-11-26 14:03:32</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>(BP) Close Mandatory on Close or Resolve</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+   var action = g_form.getActionName();
+   if (action != 'close_incident' && action != 'resolve_incident')
+      return;
+
+   // Close notes and Close code must be on the form
+   if (!g_form.hasField('resolution_notes') || !g_form.hasField('resolution_code'))
+      return;
+
+   var state = '6';
+   if (action == 'close_incident') {
+     state = '7';
+     if (typeof global_var_choice_display_values !== 'undefined') {
+       if (global_var_choice_display_values.incident_state)
+         g_form.addOption('incident_state', state, global_var_choice_display_values.incident_state);
+       if (global_var_choice_display_values.state)
+         g_form.addOption('state', state, global_var_choice_display_values.state);
+     }
+   }
+
+   g_form.setValue('incident_state', state);
+   g_form.setValue('state', state);
+   g_form.setDisplay('resolution_notes', true);
+   g_form.setMandatory('resolution_notes', true);
+   g_form.setDisplay('resolution_code', true);
+   g_form.setMandatory('resolution_code', true);
+   if (g_form.getValue('resolution_notes') == '' || g_form.getValue('resolution_code') == '')
+      return false;
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-25 09:24:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f2ef2bcac3ca9610aa2498ec0501316d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>(BP) Close Mandatory on Close or Resolve</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_script_client_f2ef2bcac3ca9610aa2498ec0501316d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-25 09:56:37</sys_updated_on>
+        <table>x_snc_learning_hub_learning_hub</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

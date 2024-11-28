@@ -6,7 +6,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -67,7 +67,7 @@ function setClosureFields() {
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bac303b7c3f59210aa2498ec0501311d</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>mark_closed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
@@ -75,7 +75,7 @@ function setClosureFields() {
         <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
         <sys_update_name>sys_script_bac303b7c3f59210aa2498ec0501311d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-19 09:00:45</sys_updated_on>
+        <sys_updated_on>2024-11-26 14:03:30</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

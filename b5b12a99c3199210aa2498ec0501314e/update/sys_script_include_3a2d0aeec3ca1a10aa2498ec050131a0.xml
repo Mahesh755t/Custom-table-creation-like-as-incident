@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_learning_hub.manager</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description> getManager: function(userId) {&#13;
+        var user = new GlideRecord('sys_user');&#13;
+        if (user.get(userId)) {&#13;
+            return user.manager ? user.manager.toString() : '';&#13;
+        }&#13;
+        return '';&#13;
+    },</description>
+        <mobile_callable>false</mobile_callable>
+        <name>manager</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var manager = Class.create();
+manager.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+ getManager: function(userId) {
+        var user = new GlideRecord('sys_user');
+        if (user.get(userId)) {
+            return user.manager ? user.manager.toString() : '';
+        }
+    },
+    type: 'manager'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-26 15:26:49</sys_created_on>
+        <sys_id>3a2d0aeec3ca1a10aa2498ec050131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>manager</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_script_include_3a2d0aeec3ca1a10aa2498ec050131a0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-26 15:26:49</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>3a2d0aeec3ca1a10aa2498ec050131a0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-26 15:26:49</sys_created_on>
+        <sys_id>2e5dca2ec3ca1a10aa2498ec05013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-26 15:26:49</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

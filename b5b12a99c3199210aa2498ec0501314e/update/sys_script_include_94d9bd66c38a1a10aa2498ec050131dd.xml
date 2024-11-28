@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_learning_hub.RecursionTester1</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RecursionTester1</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[gs.include("PrototypeServer");
+
+var RecursionTester = Class.create();
+
+RecursionTester.prototype = {
+  initialize : function(table, field, targetField) {
+    this.table = table;
+    this.field = field; 
+    if (targetField)
+        this.targetField = targetField;
+    else
+        this.targetField = "sys_id";
+  },
+
+  isRecursive : function(/* GlideRecord */ gr) {
+    if (gr[this.field].nil())
+      return false; // no parent/target no recursion
+
+    if (gr[this.field] == gr[this.targetField])
+      return true; // cannot be your own parent/target
+
+    this.abv = new Object();
+    this.abv[gr[this.targetField] + ''] = true;
+    if (!this._walkTree(gr[this.targetField]))
+      return true;
+
+    if (this.abv[current[this.field] + ''])
+      return true;
+
+    return false;
+  },
+
+  _walkTree : function(/* GlideElement */ p) {
+    var gr = new GlideRecord(this.table);
+    gr.addQuery(this.field, p);
+    gr.query();
+    while (gr.next()) {
+        var child_id = gr[this.targetField] + '';
+        if (this.abv[child_id])
+            return false;
+
+        this.abv[gr[this.targetField] + ''] = true;
+        if (!this._walkTree(gr[this.targetField]))
+            return false;
+    }
+    return true;
+  }
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-26 14:01:46</sys_created_on>
+        <sys_id>94d9bd66c38a1a10aa2498ec050131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RecursionTester1</sys_name>
+        <sys_package display_value="Incidents" source="x_snc_learning_hub">b5b12a99c3199210aa2498ec0501314e</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Incidents">b5b12a99c3199210aa2498ec0501314e</sys_scope>
+        <sys_update_name>sys_script_include_94d9bd66c38a1a10aa2498ec050131dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-26 14:01:46</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>94d9bd66c38a1a10aa2498ec050131dd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-26 14:01:45</sys_created_on>
+        <sys_id>38e97566c38a1a10aa2498ec050131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-26 14:01:45</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
